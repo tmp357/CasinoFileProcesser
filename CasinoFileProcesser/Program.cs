@@ -38,7 +38,7 @@ namespace CasinoFileProcesser
                 {
                     foreach (DataRow row in addressList.Rows)
                     {
-                        
+                        var mymatrix = matrix.Where(x => x.Segment == row[9].ToString()).ToList();
                     }
                 }
             }
